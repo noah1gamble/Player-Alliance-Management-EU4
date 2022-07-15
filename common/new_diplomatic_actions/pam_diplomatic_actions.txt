@@ -17,14 +17,22 @@
 		is_visible = {
 			AND = {
 				NOT = { alliance_with = FROM }
-				NOT = { ai = yes }
+				NOT = {
+					AND = {
+						ai = yes
+						FROM = { at = yes }
+					}
+				}
 			}
 		}
 
 		is_allowed = {
-			AND = {
-				NOT = { alliance_with = FROM }
-				NOT = { ai = yes }
+			NOT = { alliance_with = FROM }
+			NOT = {
+				AND = {
+					ai = yes
+					FROM = { at = yes }
+				}
 			}
 		}
 
