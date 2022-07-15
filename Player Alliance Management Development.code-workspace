@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "player_alliance_manager",
+			"path": "."
+		},
+		{
+			"name": "Europa Universalis IV",
+			"path": "..\\.."
+		}
+	],
+	"settings": {}
+}

@@ -1,0 +1,10 @@
+﻿l_english:
+
+  # Player Alliance Management
+
+    pam_player_alliance: "Player Alliance Request"
+    pam_player_alliance_title: "Player Alliance Request"
+    pam_player_alliance_dialog: "[From.GetName] would like to become an ally, do you accept?\n\nIf we accept, we will mutually gain §G200§! relations, and §G200§! trust."
+    pam_player_alliance_desc: "We shall seek to become an ally of [From.GetName], though as they are a human player, it is up to them!\n\nIf they accept, we will gain §G400§! relations, and §G200§! trust."
+    pam_player_alliance_tooltip: "Request a Player Alliance"
+    pam_player_alliance_alert_tooltip: "Player Alliance Request"

@@ -1,0 +1,59 @@
+###############################################
+# Player Alliance Management by JihadiJackass #
+###############################################
+
+	###########################
+	# Player Alliance Request #
+	###########################
+
+	pam_player_alliance = {
+		category = influence
+
+		alert_index = 40
+		alert_tooltip = pam_player_alliance_alert_tooltip
+
+		require_acceptance = yes
+
+		is_visible = {
+			AND = {
+				NOT = { alliance_with = FROM }
+				NOT = { ai = yes }
+			}
+		}
+
+		is_allowed = {
+			AND = {
+				NOT = { alliance_with = FROM }
+				NOT = { ai = yes }
+			}
+		}
+
+		on_accept = {
+			add_opinion = {
+				who = FRA
+				modifier = pam_player_alliance_management_opinion_positive
+			}
+			add_trust = {
+				who = FROM
+				value = 400
+				mutual = yes
+			}
+			create_alliance = FROM
+		}
+
+		on_decline = {
+			add_opinion = {
+				who = FROM
+				modifier = pam_player_alliance_management_opinion_negative
+			}
+			add_trust = {
+				who = FROM
+				value = -400
+				mutual = yes
+			}
+		}
+
+		ai_will_do = {
+			always = no
+		}
+	}
